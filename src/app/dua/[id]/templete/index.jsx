@@ -38,7 +38,7 @@ const DetailPage = () => {
               {t(con.description)}
             </Typography>
             <Typography className="arabic">{t(con.arabic)}</Typography>
-            <Typography className="translation">
+            <Typography className="translation" variant="h2">
               {t(con.translation)}
             </Typography>
             <Typography className="translation">{t(con.note)}</Typography>

@@ -34,7 +34,7 @@ const DetailPage = () => {
         <div key={index}>
           <Box className="box">
             <Typography className="title">{t(con.reference)}</Typography>
-            <Typography className="translation">
+            <Typography className="translation" variant="h2">
               {t(con.translation)}
             </Typography>
           </Box>
