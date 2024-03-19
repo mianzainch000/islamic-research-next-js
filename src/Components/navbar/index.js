@@ -54,7 +54,7 @@ const Navbar = () => {
             <Typography variant="h5">{t("navHeading")}</Typography>
             <Stack spacing={2} direction={"row"}>
               <Button onClick={() => toggleTheme()}>
-                {!toogle ? (
+                {toogle ? (
                   <WbSunnyRoundedIcon
                     onClick={() => setToogle(!toogle)}
                     sx={{ color: "white" }}

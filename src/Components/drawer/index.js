@@ -50,11 +50,9 @@ const DrawerComp = () => {
         open={isDrawerOpen}
         onClose={() => setDrawerOpen(false)}
         sx={{
-          "& .css-1160xiw-MuiPaper-root-MuiDrawer-paper": {
-            background: isLightTheme ? "black" : "white",
-            color: isLightTheme ? "white" : "black",
-            width: "100%",
-          },
+          background: isLightTheme ? "black" : "white",
+          color: isLightTheme ? "white" : "black",
+          width: "100%",
         }}
       >
         <Grid container>
