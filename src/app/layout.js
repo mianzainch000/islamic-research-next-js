@@ -5,11 +5,11 @@ import en from "@/messages/en.json";
 import urd from "@/messages/urd.json";
 import { Inter } from "next/font/google";
 import Navbar from "@/Components/navbar";
+import { getCookie } from "cookies-next";
 import { I18nextProvider } from "react-i18next";
-
 const inter = Inter({ subsets: ["latin"] });
 
-const storedLang = localStorage.getItem("selectedLanguage");
+const storedLang = getCookie("selectedLanguage");
 if (storedLang) {
   i18next.init({
     interpolation: { escapeValues: false },

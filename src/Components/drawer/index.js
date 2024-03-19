@@ -7,6 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import logo from "../../../public/image/logo.png";
 import React, { useState, useEffect } from "react";
 import AccountMenu from "@/Components/account-menu";
+import { getCookie, setCookie } from "cookies-next";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import {
   Drawer,
@@ -22,13 +23,15 @@ import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRound
 const DrawerComp = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isLightTheme, setLightTheme] = useState(
-    localStorage.getItem("theme") === "light-theme"
+    getCookie("theme") === "light-theme"
   );
 
   const toggleTheme = () => {
     const newTheme = isLightTheme ? "dark-theme" : "light-theme";
     setLightTheme(!isLightTheme);
-    localStorage.setItem("theme", newTheme);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("theme", newTheme, { expires });
   };
 
   const { t } = useTranslation("navbar");

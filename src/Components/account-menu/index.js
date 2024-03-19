@@ -2,6 +2,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
+import { setCookie } from "cookies-next";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
@@ -24,7 +25,9 @@ export default function AccountMenu() {
 
   const changeLang = (lang) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem("selectedLanguage", lang);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("selectedLanguage", lang, { expires });
   };
 
   return (

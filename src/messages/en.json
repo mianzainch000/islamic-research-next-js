@@ -1,10 +1,6 @@
 {
   "mainHeadings": [
     {
-      "id": "1",
-      "title": "Digital Quran"
-    },
-    {
       "id": "translationQuran",
       "title": "Quran with Urdu Translation"
     },
