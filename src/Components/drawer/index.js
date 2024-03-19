@@ -49,19 +49,11 @@ const DrawerComp = () => {
         anchor="right"
         open={isDrawerOpen}
         onClose={() => setDrawerOpen(false)}
-        // sx={{
-        //   "& .MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorRight":{
-
-        //     background: isLightTheme ? "black" : "white",
-        //     color: isLightTheme ? "white" : "black",
-        //     width: "100%",
-        //   }
-        // }}
         sx={{
           "& .MuiPaper-root": {
-            background: isLightTheme ? "black" : "white",
-            color: isLightTheme ? "white" : "black",
             width: "100%",
+            color: isLightTheme ? "white" : "black",
+            background: isLightTheme ? "black" : "white",
           },
         }}
       >

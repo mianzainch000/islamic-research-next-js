@@ -13,27 +13,25 @@ import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRounded";
 
 const Navbar = () => {
-  const [toogle, setToogle] = useState(false);
-  const initialTheme = getCookie("theme") || "light-theme";
-  const [theme, setTheme] = useState(initialTheme)
-
+  const [isLightTheme, setLightTheme] = useState(
+    getCookie("theme") === "light-theme"
+  );
   const colorTheme = useTheme();
   const { t } = useTranslation("navbar");
 
   const isMatch = useMediaQuery(colorTheme.breakpoints.down("md"));
 
   const toggleTheme = () => {
-    const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
-    setTheme(newTheme);
-   
+    const newTheme = isLightTheme ? "dark-theme" : "light-theme";
+    setLightTheme(!isLightTheme);
     const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
     const expires = new Date(Date.now() + oneYearInMilliseconds);
     setCookie("theme", newTheme, { expires });
   };
 
   useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+    document.body.className = isLightTheme ? "light-theme" : "dark-theme";
+  }, [isLightTheme]);
 
   return (
     <AppBar position="fixed" sx={{ background: "grey" }}>
@@ -54,16 +52,10 @@ const Navbar = () => {
             <Typography variant="h5">{t("navHeading")}</Typography>
             <Stack spacing={2} direction={"row"}>
               <Button onClick={() => toggleTheme()}>
-                {toogle ? (
-                  <WbSunnyRoundedIcon
-                    onClick={() => setToogle(!toogle)}
-                    sx={{ color: "white" }}
-                  />
+                {!isLightTheme ? (
+                  <WbSunnyRoundedIcon sx={{ color: "white" }} />
                 ) : (
-                  <NightlightRoundRoundedIcon
-                    onClick={() => setToogle(!toogle)}
-                    sx={{ color: "white" }}
-                  />
+                  <NightlightRoundRoundedIcon sx={{ color: "white" }} />
                 )}
               </Button>
               <AccountMenu />
