@@ -1,21 +1,19 @@
-"use client";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DrawerComp from "@/Components/drawer";
 import { useTranslation } from "react-i18next";
 import logo from "../../../public/image/logo.png";
-import React, { useState, useEffect } from "react";
 import AccountMenu from "@/Components/account-menu";
-import { getCookie, setCookie } from "cookies-next";
 import { useTheme, useMediaQuery } from "@mui/material";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRounded";
 
 const Navbar = () => {
-  const [isLightTheme, setLightTheme] = useState(
-    getCookie("theme") === "light-theme"
-  );
+  const value = localStorage.getItem("theme") === "light-theme";
+  const [isLightTheme, setLightTheme] = useState(value);
+
   const colorTheme = useTheme();
   const { t } = useTranslation("navbar");
 
@@ -24,9 +22,7 @@ const Navbar = () => {
   const toggleTheme = () => {
     const newTheme = isLightTheme ? "dark-theme" : "light-theme";
     setLightTheme(!isLightTheme);
-    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
-    const expires = new Date(Date.now() + oneYearInMilliseconds);
-    setCookie("theme", newTheme, { expires });
+    localStorage.setItem("theme", newTheme);
   };
 
   useEffect(() => {
@@ -52,7 +48,7 @@ const Navbar = () => {
             <Typography variant="h5">{t("navHeading")}</Typography>
             <Stack spacing={2} direction={"row"}>
               <Button onClick={() => toggleTheme()}>
-                {!isLightTheme ? (
+                {isLightTheme ? (
                   <WbSunnyRoundedIcon sx={{ color: "white" }} />
                 ) : (
                   <NightlightRoundRoundedIcon sx={{ color: "white" }} />

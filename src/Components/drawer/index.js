@@ -23,15 +23,13 @@ import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRound
 const DrawerComp = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isLightTheme, setLightTheme] = useState(
-    getCookie("theme") === "light-theme"
+    localStorage.getItem("theme") === "light-theme"
   );
 
   const toggleTheme = () => {
     const newTheme = isLightTheme ? "dark-theme" : "light-theme";
     setLightTheme(!isLightTheme);
-    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
-    const expires = new Date(Date.now() + oneYearInMilliseconds);
-    setCookie("theme", newTheme, { expires });
+    localStorage.setItem("theme", newTheme);
   };
 
   const { t } = useTranslation("navbar");
@@ -52,8 +50,8 @@ const DrawerComp = () => {
         sx={{
           "& .MuiPaper-root": {
             width: "100%",
-            color: isLightTheme ? "white" : "black",
-            background: isLightTheme ? "black" : "white",
+            color: isLightTheme ? "black" : "white",
+            background: isLightTheme ? "white" : "black",
           },
         }}
       >
@@ -66,7 +64,7 @@ const DrawerComp = () => {
 
           <Grid md={1} xs={1}>
             <IconButton onClick={() => setDrawerOpen(false)}>
-              <CloseIcon sx={{ color: isLightTheme ? "white" : "black" }} />
+              <CloseIcon sx={{ color: isLightTheme ? "black" : "white" }} />
             </IconButton>
           </Grid>
         </Grid>
@@ -85,7 +83,7 @@ const DrawerComp = () => {
             marginTop={"60px"}
           >
             <Button onClick={toggleTheme}>
-              {!isLightTheme ? (
+              {isLightTheme ? (
                 <WbSunnyRoundedIcon sx={{ color: "black" }} />
               ) : (
                 <NightlightRoundRoundedIcon sx={{ color: "white" }} />

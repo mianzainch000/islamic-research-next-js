@@ -3,12 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.light-theme {
+.dark-theme {
   --textColor: white;
   --backgroundColor: black;
 }
 
-.dark-theme {
+.light-theme {
   --textColor: black;
   --backgroundColor: white;
 }
