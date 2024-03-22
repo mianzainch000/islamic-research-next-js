@@ -1,25 +1,42 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { useTranslation } from "react-i18next";
-import { Box, Typography } from "@mui/material";
 import En from "@/messages/en.json";
+import { Grid } from "@mui/material";
 import Urd from "@/messages/urd.json";
+import CardComp from "@/Components/card";
+import { useTranslation } from "react-i18next";
+
 const DuaSubHeading = () => {
   const { t, i18n } = useTranslation("duaSubHeading");
   const lang = i18n.language === "urd" ? Urd : En;
   return (
-    <>
-      <Box>
-        {lang?.duaSubHeading?.map((heading) => (
-          <Box key={heading.id} className="box">
-            <Link href={`dua/${heading?.id}`} className="link">
-              <Typography className="title">{t(heading.title)}</Typography>
-            </Link>
-          </Box>
-        ))}
-      </Box>
-    </>
+    <Grid
+      container
+      spacing={3}
+      sx={{
+        marginTop: "100px",
+        marginBottom: "20px",
+        justifyContent: "center",
+      }}
+    >
+      {lang?.duaSubHeading?.map((heading) => (
+        <Grid
+          item
+          key={heading.id}
+          lg={4}
+          md={4}
+          sm={6}
+          xs={12}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <CardComp
+            title={t(heading.title)}
+            button={t(heading.button)}
+            href={`dua/${heading?.id}`}
+          />
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 

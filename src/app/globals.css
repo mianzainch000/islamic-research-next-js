@@ -30,9 +30,9 @@ body {
 /* title=== heading+references */
 
 .title {
-  padding: 10px 0px;
   font-size: 20px !important;
   font-weight: 600 !important;
+  text-align: center !important;
   text-decoration: none !important;
 }
 
@@ -52,4 +52,18 @@ body {
 .link {
   color: var(--textColor);
   text-decoration: none !important;
+}
+
+.card {
+  border: 5px solid !important;
+  border-color: var(--textColor);
+  color: var(--textColor) !important;
+  background-color: var(--backgroundColor) !important;
+}
+
+.button {
+  cursor: pointer !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  color: var(--textColor) !important;
 }

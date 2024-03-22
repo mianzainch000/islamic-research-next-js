@@ -2,35 +2,44 @@
   "mainHeadings": [
     {
       "id": "translationQuran",
-      "title": "قرآن  اردو  ترجمے کے ساتھ"
+      "title": "قرآن  اردو  ترجمے کے ساتھ",
+      "button": "Read more"
     },
     {
       "id": "namaz",
-      "title": "قرآن و سنت کی روشنی میں نماز کی اہمیت"
+      "title": "قرآن و سنت کی روشنی میں نماز کی اہمیت",
+      "button": "Read more"
     },
     {
       "id": "dua",
-      "title": "قرآن و سنت کی روشنی میں دعا کی اہمیت"
+      "title": "قرآن و سنت کی روشنی میں دعا کی اہمیت",
+      "button": "Read more"
     },
     {
       "id": "wealth",
-      "title": "مال ایک فتنہ"
+      "title": "مال ایک فتنہ",
+      "button": "Read more"
     }
   ],
+
   "wealthSubHeading": [
     {
       "id": "1",
-      "title": "مال ایک فتنہ"
+      "title": "مال ایک فتنہ",
+      "button": "Read more"
     },
     {
       "id": "2",
-      "title": "آخرت کو دنیا پرترجی دینا"
+      "title": "آخرت کو دنیا پرترجی دینا",
+      "button": "Read more"
     },
     {
       "id": "3",
-      "title": "سود ایک لعنت"
+      "title": "سود ایک لعنت",
+      "button": "Read more"
     }
   ],
+
   "wealthDetailPage": [
     {
       "id": "1",
@@ -168,32 +177,40 @@
       ]
     }
   ],
+
   "namazSubHeading": [
     {
       "id": "1",
-      "title": "نماز کی فضلیت"
+      "title": "نماز کی فضلیت",
+      "button": "Read more"
     },
     {
       "id": "2",
-      "title": "نماز نہ پڑھنے والو کا انجام"
+      "title": "نماز نہ پڑھنے والو کا انجام",
+      "button": "Read more"
     },
     {
       "id": "3",
-      "title": "مرنے کے بعد لوگوں کی تمنائیں"
+      "title": "مرنے کے بعد لوگوں کی تمنائیں",
+      "button": "Read more"
     },
     {
       "id": "4",
-      "title": "صرف فرض نماز پڑھ لینا بھی کافی ہے"
+      "title": "صرف فرض نماز پڑھ لینا بھی کافی ہے",
+      "button": "Read more"
     },
     {
       "id": "5",
-      "title": "سنّت اور نفل کی فضلیت"
+      "title": "سنّت اور نفل کی فضلیت",
+      "button": "Read more"
     },
     {
       "id": "6",
-      "title": "دو نمازوں کو جمع کرنا"
+      "title": "دو نمازوں کو جمع کرنا",
+      "button": "Read more"
     }
   ],
+
   "namazDetailPage": [
     {
       "id": "1",
@@ -404,232 +421,100 @@
       ]
     }
   ],
-  "QuranwithTran": [
-    {
-      "id": "1",
-      "link": "http://bit.ly/2qpLHGY",
-      "text": "پارہ 1"
-    },
-    {
-      "id": "2",
-      "link": "http://bit.ly/2qnS2Ha",
-      "text": "پارہ 2"
-    },
-    {
-      "id": "3",
-      "link": "http://bit.ly/2sbSqoq",
-      "text": "پارہ 3"
-    },
-    {
-      "id": "4",
-      "link": "http://bit.ly/2r6TOeq",
-      "text": "پارہ 4"
-    },
-    {
-      "id": "5",
-      "link": "http://bit.ly/2qzzsYk",
-      "text": "پارہ 5"
-    },
-    {
-      "id": "6",
-      "link": "http://bit.ly/2qI4EE2",
-      "text": "پارہ 6"
-    },
-    {
-      "id": "7",
-      "link": "http://bit.ly/2rW88HS",
-      "text": "پارہ 7"
-    },
-    {
-      "id": "8",
-      "link": "http://bit.ly/2qK0aO4",
-      "text": "پارہ 8"
-    },
-    {
-      "id": "9",
-      "link": "http://bit.ly/2rBqzB0",
-      "text": "پارہ 9"
-    },
-    {
-      "id": "10",
-      "link": "http://bit.ly/2s3dkdd",
-      "text": "پارہ 10"
-    },
-    {
-      "id": "11",
-      "link": "http://bit.ly/2so5po5",
-      "text": "پارہ 11"
-    },
-    {
-      "id": "12",
-      "link": "http://bit.ly/2rzgVP9",
-      "text": "پارہ 12"
-    },
-    {
-      "id": "13",
-      "link": "http://bit.ly/2rSIJ1l",
-      "text": "پارہ 13"
-    },
-    {
-      "id": "14",
-      "link": "http://bit.ly/2sk5Lid",
-      "text": "پارہ 14"
-    },
-    {
-      "id": "15",
-      "link": "http://bit.ly/2rKJHw3",
-      "text": "پارہ 15"
-    },
-    {
-      "id": "16",
-      "link": "http://bit.ly/2sMTr7y",
-      "text": "پارہ 16"
-    },
-    {
-      "id": "17",
-      "link": "http://bit.ly/2r9opp2",
-      "text": "پارہ 17"
-    },
-    {
-      "id": "18",
-      "link": "http://bit.ly/2rpK4c8",
-      "text": "پارہ 18"
-    },
-    {
-      "id": "19",
-      "link": "http://bit.ly/2rpq1iW",
-      "text": "پارہ 19"
-    },
-    {
-      "id": "20",
-      "link": "http://bit.ly/2rAX4Mc",
-      "text": "پارہ 20"
-    },
-    {
-      "id": "21",
-      "link": "http://bit.ly/2rBv2Aa",
-      "text": "پارہ 21"
-    },
-    {
-      "id": "22",
-      "link": "http://bit.ly/2sbmkft",
-      "text": "پارہ 22"
-    },
-    {
-      "id": 23,
-      "link": "http://bit.ly/2rtPXpH",
-      "text": "پارہ 23"
-    },
-    {
-      "id": 24,
-      "link": "http://bit.ly/2sfUCOE",
-      "text": "پارہ 24"
-    },
-    {
-      "id": 25,
-      "link": "http://bit.ly/2smfZxF",
-      "text": "پارہ 25"
-    },
-    {
-      "id": 26,
-      "link": "http://bit.ly/2tLUEvC",
-      "text": "پارہ 26"
-    },
-    {
-      "id": 27,
-      "link": "http://bit.ly/2tru5wz",
-      "text": "پارہ 27"
-    },
-    {
-      "id": 28,
-      "link": "http://bit.ly/2rXeW98",
-      "text": "پارہ 28"
-    },
-    {
-      "id": 29,
-      "link": "http://bit.ly/2s5NLEk",
-      "text": "پارہ 29"
-    },
-    {
-      "id": 30,
-      "link": "http://bit.ly/2s1BBB4",
-      "text": "پارہ 30"
-    }
-  ],
+
   "duaSubHeading": [
     {
       "id": 1,
-      "title": "اللّه کے ذکر کی فضلیت"
+      "title": "اللّه کے ذکر کی فضلیت",
+      "button": "Read more"
     },
     {
       "id": 2,
-      "title": "بہترین ذکر"
+      "title": "بہترین ذکر",
+      "button": "Read more"
     },
     {
       "id": 3,
-      "title": "دنیا ایک امتحان کی جگہ ہے"
+      "title": "دنیا ایک امتحان کی جگہ ہے",
+      "button": "Read more"
     },
     {
       "id": 4,
-      "title": "دعا کی اہمیت"
+      "title": "دعا کی اہمیت",
+      "button": "Read more"
     },
     {
       "id": 5,
-      "title": "اسم اعظم"
+      "title": "اسم اعظم",
+      "button": "Read more"
     },
     {
       "id": 6,
-      "title": "درود شریف"
+      "title": "درود شریف",
+      "button": "Read more"
     },
     {
       "id": 7,
-      "title": "جنت میں جانے کی دعا"
+      "title": "جنت میں جانے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 8,
-      "title": "جہنم کے عذاب سے بچنے کی دعا"
+      "title": "جہنم کے عذاب سے بچنے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 9,
-      "title": "جب محمد صلی اللہ علیہ وسلم نے خواب میں اللہ کو دیکھا اور یہ دعا کی۔"
+      "title": "جب محمد صلی اللہ علیہ وسلم نے خواب میں اللہ کو دیکھا اور یہ دعا کی۔",
+      "button": "Read more"
     },
     {
       "id": 10,
-      "title": "والرین کی بخشش کی دعا"
+      "title": "والرین کی بخشش کی دعا",
+      "button": "Read more"
     },
     {
       "id": 11,
-      "title": "مشکل اور پریشانی سے نجات کی دعا"
+      "title": "مشکل اور پریشانی سے نجات کی دعا",
+      "button": "Read more"
     },
     {
       "id": 12,
-      "title": "رزق میں برکت کی دعا"
+      "title": "رزق میں برکت کی دعا",
+      "button": "Read more"
     },
     {
       "id": 13,
-      "title": "علم میں اضافے کی دعا"
+      "title": "علم میں اضافے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 14,
-      "title": "قبرستان جانے کی دعا"
+      "title": "قبرستان جانے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 15,
-      "title": "گھر سے نکلنے یا سفر کرنے کی دعا"
+      "title": "گھر سے نکلنے یا سفر کرنے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 16,
-      "title": "میت کی بخشش کی دعا"
+      "title": "میت کی بخشش کی دعا",
+      "button": "Read more"
     },
     {
       "id": 17,
-      "title": "ناگھانی افت سے بچنے کی دعا"
+      "title": "ناگھانی افت سے بچنے کی دعا",
+      "button": "Read more"
     },
     {
       "id": 18,
-      "title": "اذان کے بعد کی دعا"
+      "title": "اذان کے بعد کی دعا",
+      "button": "Read more"
     }
   ],
+
   "duaDetailPage": [
     {
       "id": "1",
@@ -1210,6 +1095,190 @@
       ]
     }
   ],
+
+  "QuranwithTran": [
+    {
+      "id": "1",
+      "link": "http://bit.ly/2qpLHGY",
+      "text": "پارہ 1",
+      "button": "Read more"
+    },
+    {
+      "id": "2",
+      "link": "http://bit.ly/2qnS2Ha",
+      "text": "پارہ 2",
+      "button": "Read more"
+    },
+    {
+      "id": "3",
+      "link": "http://bit.ly/2sbSqoq",
+      "text": "پارہ 3",
+      "button": "Read more"
+    },
+    {
+      "id": "4",
+      "link": "http://bit.ly/2r6TOeq",
+      "text": "پارہ 4",
+      "button": "Read more"
+    },
+    {
+      "id": "5",
+      "link": "http://bit.ly/2qzzsYk",
+      "text": "پارہ 5",
+      "button": "Read more"
+    },
+    {
+      "id": "6",
+      "link": "http://bit.ly/2qI4EE2",
+      "text": "پارہ 6",
+      "button": "Read more"
+    },
+    {
+      "id": "7",
+      "link": "http://bit.ly/2rW88HS",
+      "text": "پارہ 7",
+      "button": "Read more"
+    },
+    {
+      "id": "8",
+      "link": "http://bit.ly/2qK0aO4",
+      "text": "پارہ 8",
+      "button": "Read more"
+    },
+    {
+      "id": "9",
+      "link": "http://bit.ly/2rBqzB0",
+      "text": "پارہ 9",
+      "button": "Read more"
+    },
+    {
+      "id": "10",
+      "link": "http://bit.ly/2s3dkdd",
+      "text": "پارہ 10",
+      "button": "Read more"
+    },
+    {
+      "id": "11",
+      "link": "http://bit.ly/2so5po5",
+      "text": "پارہ 11",
+      "button": "Read more"
+    },
+    {
+      "id": "12",
+      "link": "http://bit.ly/2rzgVP9",
+      "text": "پارہ 12",
+      "button": "Read more"
+    },
+    {
+      "id": "13",
+      "link": "http://bit.ly/2rSIJ1l",
+      "text": "پارہ 13",
+      "button": "Read more"
+    },
+    {
+      "id": "14",
+      "link": "http://bit.ly/2sk5Lid",
+      "text": "پارہ 14",
+      "button": "Read more"
+    },
+    {
+      "id": "15",
+      "link": "http://bit.ly/2rKJHw3",
+      "text": "پارہ 15",
+      "button": "Read more"
+    },
+    {
+      "id": "16",
+      "link": "http://bit.ly/2sMTr7y",
+      "text": "پارہ 16",
+      "button": "Read more"
+    },
+    {
+      "id": "17",
+      "link": "http://bit.ly/2r9opp2",
+      "text": "پارہ 17",
+      "button": "Read more"
+    },
+    {
+      "id": "18",
+      "link": "http://bit.ly/2rpK4c8",
+      "text": "پارہ 18",
+      "button": "Read more"
+    },
+    {
+      "id": "19",
+      "link": "http://bit.ly/2rpq1iW",
+      "text": "پارہ 19",
+      "button": "Read more"
+    },
+    {
+      "id": "20",
+      "link": "http://bit.ly/2rAX4Mc",
+      "text": "پارہ 20",
+      "button": "Read more"
+    },
+    {
+      "id": "21",
+      "link": "http://bit.ly/2rBv2Aa",
+      "text": "پارہ 21",
+      "button": "Read more"
+    },
+    {
+      "id": "22",
+      "link": "http://bit.ly/2sbmkft",
+      "text": "پارہ 22",
+      "button": "Read more"
+    },
+    {
+      "id": 23,
+      "link": "http://bit.ly/2rtPXpH",
+      "text": "پارہ 23",
+      "button": "Read more"
+    },
+    {
+      "id": 24,
+      "link": "http://bit.ly/2sfUCOE",
+      "text": "پارہ 24",
+      "button": "Read more"
+    },
+    {
+      "id": 25,
+      "link": "http://bit.ly/2smfZxF",
+      "text": "پارہ 25",
+      "button": "Read more"
+    },
+    {
+      "id": 26,
+      "link": "http://bit.ly/2tLUEvC",
+      "text": "پارہ 26",
+      "button": "Read more"
+    },
+    {
+      "id": 27,
+      "link": "http://bit.ly/2tru5wz",
+      "text": "پارہ 27",
+      "button": "Read more"
+    },
+    {
+      "id": 28,
+      "link": "http://bit.ly/2rXeW98",
+      "text": "پارہ 28",
+      "button": "Read more"
+    },
+    {
+      "id": 29,
+      "link": "http://bit.ly/2s5NLEk",
+      "text": "پارہ 29",
+      "button": "Read more"
+    },
+    {
+      "id": 30,
+      "link": "http://bit.ly/2s1BBB4",
+      "text": "پارہ 30",
+      "button": "Read more"
+    }
+  ],
+
   "navbar": {
     "navHeading": "اللہ کی  یاد  ہی سے دلوں کو سُکون ملتا ہے"
   }

@@ -1,25 +1,43 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { useTranslation } from "react-i18next";
 import En from "@/messages/en.json";
-import { Box, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import Urd from "@/messages/urd.json";
+import CardComp from "@/Components/card";
+import { useTranslation } from "react-i18next";
 
 const QuranTrans = () => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language === "urd" ? Urd : En;
 
   return (
-    <Box>
+    <Grid
+      container
+      spacing={3}
+      sx={{
+        marginTop: "100px",
+        marginBottom: "20px",
+        justifyContent: "center",
+      }}
+    >
       {lang?.QuranwithTran?.map((heading) => (
-        <Box key={heading.id} className="box">
-          <Link href={heading?.link} className="link">
-            <Typography className="title">{t(heading.text)}</Typography>
-          </Link>
-        </Box>
+        <Grid
+          item
+          key={heading.id}
+          lg={4}
+          md={4}
+          sm={6}
+          xs={12}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <CardComp
+            title={t(heading.text)}
+            button={t(heading.button)}
+            href={heading?.link}
+          />
+        </Grid>
       ))}
-    </Box>
+    </Grid>
   );
 };
 

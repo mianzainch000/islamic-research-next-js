@@ -2,33 +2,40 @@
   "mainHeadings": [
     {
       "id": "translationQuran",
-      "title": "Quran with Urdu Translation"
+      "title": "Quran with Urdu Translation",
+      "button": "Read more"
     },
     {
       "id": "namaz",
-      "title": "The Importance of Prayer in Light of Quran and Sunnah"
+      "title": "The Importance of Prayer in Light of Quran and Sunnah",
+      "button": "Read more"
     },
     {
       "id": "dua",
-      "title": "The Importance of Supplication (Du'a) in Light of Quran and Sunnah"
+      "title": "The Importance of Supplication (Du'a) in Light of Quran and Sunnah",
+      "button": "Read more"
     },
     {
       "id": "wealth",
-      "title": "Wealth: A Trial"
+      "title": "Wealth: A Trial",
+      "button": "Read more"
     }
   ],
   "wealthSubHeading": [
     {
       "id": "1",
-      "title": "Wealth is a trial"
+      "title": "Wealth is a trial",
+      "button": "Read more"
     },
     {
       "id": "2",
-      "title": "Giving precedence to the Hereafter over the World"
+      "title": "Giving precedence to the Hereafter over the World",
+      "button": "Read more"
     },
     {
       "id": "3",
-      "title": "Interest is a curse"
+      "title": "Interest is a curse",
+      "button": "Read more"
     }
   ],
 
@@ -182,27 +189,33 @@
   "namazSubHeading": [
     {
       "id": "1",
-      "title": "Virtues of Prayer"
+      "title": "Virtues of Prayer",
+      "button": "Read more"
     },
     {
       "id": "2",
-      "title": "Consequences of Not Praying"
+      "title": "Consequences of Not Praying",
+      "button": "Read more"
     },
     {
       "id": "3",
-      "title": "People's translationires After Death"
+      "title": "People's translationires After Death",
+      "button": "Read more"
     },
     {
       "id": "4",
-      "title": "Just Performing Obligatory Prayers is Sufficient"
+      "title": "Just Performing Obligatory Prayers is Sufficient",
+      "button": "Read more"
     },
     {
       "id": "5",
-      "title": "Virtues of Sunnah and Voluntary Prayers"
+      "title": "Virtues of Sunnah and Voluntary Prayers",
+      "button": "Read more"
     },
     {
       "id": "6",
-      "title": "Combining Two Prayers"
+      "title": "Combining Two Prayers",
+      "button": "Read more"
     }
   ],
 
@@ -426,250 +439,96 @@
     }
   ],
 
-  "QuranwithTran": [
-    {
-      "id": "1",
-      "link": "http://bit.ly/2qpLHGY",
-      "text": "para 1"
-    },
-
-    {
-      "id": "2",
-      "link": "http://bit.ly/2qnS2Ha",
-      "text": "para 2"
-    },
-
-    {
-      "id": "3",
-      "link": "http://bit.ly/2sbSqoq",
-      "text": "para 3"
-    },
-
-    {
-      "id": "4",
-      "link": "http://bit.ly/2r6TOeq",
-      "text": "para 4"
-    },
-
-    {
-      "id": "5",
-      "link": "http://bit.ly/2qzzsYk",
-      "text": "para 5"
-    },
-
-    {
-      "id": "6",
-      "link": "http://bit.ly/2qI4EE2",
-      "text": "para 6"
-    },
-    {
-      "id": "7",
-      "link": "http://bit.ly/2rW88HS",
-      "text": "para 7"
-    },
-
-    {
-      "id": "8",
-      "link": "http://bit.ly/2qK0aO4",
-      "text": "para 8"
-    },
-
-    {
-      "id": "9",
-      "link": "http://bit.ly/2rBqzB0",
-      "text": "para 9"
-    },
-    {
-      "id": "10",
-      "link": "http://bit.ly/2s3dkdd",
-      "text": "para 10"
-    },
-
-    {
-      "id": "11",
-      "link": "http://bit.ly/2so5po5",
-      "text": "para 11"
-    },
-
-    {
-      "id": "12",
-      "link": "http://bit.ly/2rzgVP9",
-      "text": "para 12"
-    },
-
-    {
-      "id": "13",
-      "link": "http://bit.ly/2rSIJ1l",
-      "text": "para 13"
-    },
-
-    {
-      "id": "14",
-      "link": "http://bit.ly/2sk5Lid",
-      "text": "para 14"
-    },
-
-    {
-      "id": "15",
-      "link": "http://bit.ly/2rKJHw3",
-      "text": "para 15"
-    },
-
-    {
-      "id": "16",
-      "link": "http://bit.ly/2sMTr7y",
-      "text": "para 16"
-    },
-
-    {
-      "id": "17",
-      "link": "http://bit.ly/2r9opp2",
-      "text": "para 17"
-    },
-
-    {
-      "id": "18",
-      "link": "http://bit.ly/2rpK4c8",
-      "text": "para 18"
-    },
-
-    {
-      "id": "19",
-      "link": "http://bit.ly/2rpq1iW",
-      "text": "para 19"
-    },
-
-    {
-      "id": "20",
-      "link": "http://bit.ly/2rAX4Mc",
-      "text": "para 20"
-    },
-
-    {
-      "id": "21",
-      "link": "http://bit.ly/2rBv2Aa",
-      "text": "para 21"
-    },
-
-    {
-      "id": "22",
-      "link": "http://bit.ly/2sbmkft",
-      "text": "para 22"
-    },
-    {
-      "id": 23,
-      "link": "http://bit.ly/2rtPXpH",
-      "text": "para 23"
-    },
-    {
-      "id": 24,
-      "link": "http://bit.ly/2sfUCOE",
-      "text": "para 24"
-    },
-    {
-      "id": 25,
-      "link": "http://bit.ly/2smfZxF",
-      "text": "para 25"
-    },
-    {
-      "id": 26,
-      "link": "http://bit.ly/2tLUEvC",
-      "text": "para 26"
-    },
-    {
-      "id": 27,
-      "link": "http://bit.ly/2tru5wz",
-      "text": "para 27"
-    },
-    {
-      "id": 28,
-      "link": "http://bit.ly/2rXeW98",
-      "text": "para 28"
-    },
-    {
-      "id": 29,
-      "link": "http://bit.ly/2s5NLEk",
-      "text": "para 29"
-    },
-    {
-      "id": 30,
-      "link": "http://bit.ly/2s1BBB4",
-      "text": "para 30"
-    }
-  ],
-
   "duaSubHeading": [
     {
       "id": 1,
-      "title": "The Virtue of Remembrance of Allah"
+      "title": "The Virtue of Remembrance of Allah",
+      "button": "Read more"
     },
     {
       "id": 2,
-      "title": "The Best Remembrance"
+      "title": "The Best Remembrance",
+      "button": "Read more"
     },
     {
       "id": 3,
-      "title": "The World is a Place of Test"
+      "title": "The World is a Place of Test",
+      "button": "Read more"
     },
     {
       "id": 4,
-      "title": "The Importance of Prayer"
+      "title": "The Importance of Prayer",
+      "button": "Read more"
     },
     {
       "id": 5,
-      "title": "The Most Magnificent Name"
+      "title": "The Most Magnificent Name",
+      "button": "Read more"
     },
     {
       "id": 6,
-      "title": "Sending Blessings upon the Prophet"
+      "title": "Sending Blessings upon the Prophet",
+      "button": "Read more"
     },
     {
       "id": 7,
-      "title": "Prayer for Entry into Paradise"
+      "title": "Prayer for Entry into Paradise",
+      "button": "Read more"
     },
     {
       "id": 8,
-      "title": "Prayer for Protection from the Punishment of Hell"
+      "title": "Prayer for Protection from the Punishment of Hell",
+      "button": "Read more"
     },
     {
       "id": 9,
-      "title": "The Prayer Muhammad Made When He Saw Allah in a Dream"
+      "title": "The Prayer Muhammad Made When He Saw Allah in a Dream",
+      "button": "Read more"
     },
     {
       "id": 10,
-      "title": "Prayer for Seeking Forgiveness"
+      "title": "Prayer for Seeking Forgiveness",
+      "button": "Read more"
     },
     {
       "id": 11,
-      "title": "Prayer for Relief from Hardship and Distress"
+      "title": "Prayer for Relief from Hardship and Distress",
+      "button": "Read more"
     },
     {
       "id": 12,
-      "title": "Prayer for Blessings in Provision"
+      "title": "Prayer for Blessings in Provision",
+      "button": "Read more"
     },
     {
       "id": 13,
-      "title": "Prayer for Increase in Knowledge"
+      "title": "Prayer for Increase in Knowledge",
+      "button": "Read more"
     },
     {
       "id": 14,
-      "title": "Prayer for Visiting the Cemetery"
+      "title": "Prayer for Visiting the Cemetery",
+      "button": "Read more"
     },
     {
       "id": 15,
-      "title": "Prayer for Leaving Home or Traveling"
+      "title": "Prayer for Leaving Home or Traveling",
+      "button": "Read more"
     },
     {
       "id": 16,
-      "title": "Prayer for Forgiveness of the Deceased"
+      "title": "Prayer for Forgiveness of the Deceased",
+      "button": "Read more"
     },
     {
       "id": 17,
-      "title": "Prayer for Protection from Sudden Calamity"
+      "title": "Prayer for Protection from Sudden Calamity",
+      "button": "Read more"
     },
     {
       "id": 18,
-      "title": "Prayer After the Call to Prayer (Adhan)"
+      "title": "Prayer After the Call to Prayer (Adhan)",
+      "button": "Read more"
     }
   ],
 
@@ -1278,6 +1137,207 @@
           "translation": "O Allah! Lord of this perfect call and established prayer, grant Muhammad the intercession and favor, and raise him to the praised station You have promised him, a station of praise which You have promised him."
         }
       ]
+    }
+  ],
+
+  "QuranwithTran": [
+    {
+      "id": "1",
+      "link": "http://bit.ly/2qpLHGY",
+      "text": "para 1",
+      "button": "Read more"
+    },
+
+    {
+      "id": "2",
+      "link": "http://bit.ly/2qnS2Ha",
+      "text": "para 2",
+      "button": "Read more"
+    },
+
+    {
+      "id": "3",
+      "link": "http://bit.ly/2sbSqoq",
+      "text": "para 3",
+      "button": "Read more"
+    },
+
+    {
+      "id": "4",
+      "link": "http://bit.ly/2r6TOeq",
+      "text": "para 4",
+      "button": "Read more"
+    },
+
+    {
+      "id": "5",
+      "link": "http://bit.ly/2qzzsYk",
+      "text": "para 5",
+      "button": "Read more"
+    },
+
+    {
+      "id": "6",
+      "link": "http://bit.ly/2qI4EE2",
+      "text": "para 6",
+      "button": "Read more"
+    },
+    {
+      "id": "7",
+      "link": "http://bit.ly/2rW88HS",
+      "text": "para 7",
+      "button": "Read more"
+    },
+
+    {
+      "id": "8",
+      "link": "http://bit.ly/2qK0aO4",
+      "text": "para 8",
+      "button": "Read more"
+    },
+
+    {
+      "id": "9",
+      "link": "http://bit.ly/2rBqzB0",
+      "text": "para 9",
+      "button": "Read more"
+    },
+    {
+      "id": "10",
+      "link": "http://bit.ly/2s3dkdd",
+      "text": "para 10",
+      "button": "Read more"
+    },
+
+    {
+      "id": "11",
+      "link": "http://bit.ly/2so5po5",
+      "text": "para 11",
+      "button": "Read more"
+    },
+
+    {
+      "id": "12",
+      "link": "http://bit.ly/2rzgVP9",
+      "text": "para 12",
+      "button": "Read more"
+    },
+
+    {
+      "id": "13",
+      "link": "http://bit.ly/2rSIJ1l",
+      "text": "para 13",
+      "button": "Read more"
+    },
+
+    {
+      "id": "14",
+      "link": "http://bit.ly/2sk5Lid",
+      "text": "para 14",
+      "button": "Read more"
+    },
+
+    {
+      "id": "15",
+      "link": "http://bit.ly/2rKJHw3",
+      "text": "para 15",
+      "button": "Read more"
+    },
+
+    {
+      "id": "16",
+      "link": "http://bit.ly/2sMTr7y",
+      "text": "para 16",
+      "button": "Read more"
+    },
+
+    {
+      "id": "17",
+      "link": "http://bit.ly/2r9opp2",
+      "text": "para 17",
+      "button": "Read more"
+    },
+
+    {
+      "id": "18",
+      "link": "http://bit.ly/2rpK4c8",
+      "text": "para 18",
+      "button": "Read more"
+    },
+
+    {
+      "id": "19",
+      "link": "http://bit.ly/2rpq1iW",
+      "text": "para 19"
+    },
+
+    {
+      "id": "20",
+      "link": "http://bit.ly/2rAX4Mc",
+      "text": "para 20",
+      "button": "Read more"
+    },
+
+    {
+      "id": "21",
+      "link": "http://bit.ly/2rBv2Aa",
+      "text": "para 21",
+      "button": "Read more"
+    },
+
+    {
+      "id": "22",
+      "link": "http://bit.ly/2sbmkft",
+      "text": "para 22",
+      "button": "Read more"
+    },
+    {
+      "id": 23,
+      "link": "http://bit.ly/2rtPXpH",
+      "text": "para 23",
+      "button": "Read more"
+    },
+    {
+      "id": 24,
+      "link": "http://bit.ly/2sfUCOE",
+      "text": "para 24",
+      "button": "Read more"
+    },
+    {
+      "id": 25,
+      "link": "http://bit.ly/2smfZxF",
+      "text": "para 25",
+      "button": "Read more"
+    },
+    {
+      "id": 26,
+      "link": "http://bit.ly/2tLUEvC",
+      "text": "para 26",
+      "button": "Read more"
+    },
+    {
+      "id": 27,
+      "link": "http://bit.ly/2tru5wz",
+      "text": "para 27",
+      "button": "Read more"
+    },
+    {
+      "id": 28,
+      "link": "http://bit.ly/2rXeW98",
+      "text": "para 28",
+      "button": "Read more"
+    },
+    {
+      "id": 29,
+      "link": "http://bit.ly/2s5NLEk",
+      "text": "para 29",
+      "button": "Read more"
+    },
+    {
+      "id": 30,
+      "link": "http://bit.ly/2s1BBB4",
+      "text": "para 30",
+      "button": "Read more"
     }
   ],
 
