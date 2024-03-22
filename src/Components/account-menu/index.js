@@ -25,7 +25,9 @@ export default function AccountMenu() {
 
   const changeLang = (lang) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem("selectedLanguage", lang);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("selectedLanguage", lang, { expires });
   };
 
   return (
