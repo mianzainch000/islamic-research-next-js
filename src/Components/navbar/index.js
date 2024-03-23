@@ -32,6 +32,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    document.body.className = isLightTheme ? "light-theme" : "dark-theme";
     if (path === "/") {
       return setScreenName(t("navHeading"));
     } else if (path === "/translationQuran") {
@@ -43,7 +44,7 @@ const Navbar = () => {
     } else if (path === "/wealth") {
       return setScreenName(t("wealth"));
     }
-  }, [isLightTheme, path,t]);
+  }, [isLightTheme, path, t]);
 
   return (
     <AppBar position="fixed" sx={{ background: "grey" }}>
