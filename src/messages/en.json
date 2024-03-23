@@ -1343,5 +1343,25 @@
 
   "navbar": {
     "navHeading": "In the remembrance of Allah, hearts find tranquility"
-  }
+  },
+
+  "drawerHeadings": [
+    {
+      "id": "translationQuran",
+      "title": "Quran"
+    },
+    {
+      "id": "dua",
+      "title": "Dua"
+    },
+    {
+      "id": "namaz",
+      "title": "Prayer"
+    },
+
+    {
+      "id": "wealth",
+      "title": "Wealth"
+    }
+  ]
 }

@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <Image src={logo} width={50} />
             </Link>
-
+{/* <h3>Importance of dua</h3> */}
             <DrawerComp />
           </>
         ) : (

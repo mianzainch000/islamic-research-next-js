@@ -1281,5 +1281,25 @@
 
   "navbar": {
     "navHeading": "اللہ کی  یاد  ہی سے دلوں کو سُکون ملتا ہے"
-  }
+  },
+
+  "drawerHeadings": [
+    {
+      "id": "translationQuran",
+      "title": "قرآن "
+    },
+    {
+      "id": "dua",
+      "title": "دعا"
+    },
+    {
+      "id": "namaz",
+      "title": "نماز"
+    },
+
+    {
+      "id": "wealth",
+      "title": "مال"
+    }
+  ]
 }

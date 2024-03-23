@@ -1,30 +1,35 @@
 "use client";
+import React, { useState, useEffect } from "react";
+import { useTranslation, i18n } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import En from "@/messages/en.json";
+import Urd from "@/messages/urd.json";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../../../public/image/logo.png";
-import React, { useState, useEffect } from "react";
-import AccountMenu from "@/Components/account-menu";
 import { getCookie, setCookie } from "cookies-next";
-import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import {
   Drawer,
   Box,
   IconButton,
-  Button,
-  Stack,
   Grid,
   Typography,
+  RadioGroup,
+  Radio,
+  FormControlLabel,
 } from "@mui/material";
-import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRounded";
 
 const DrawerComp = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState("urd");
   const [isLightTheme, setLightTheme] = useState(
     getCookie("theme") === "light-theme"
   );
+
+  const { t } = useTranslation("navbar");
+  const { i18n } = useTranslation();
+  const lang = i18n.language === "urd" ? Urd : En;
 
   const toggleTheme = () => {
     const newTheme = isLightTheme ? "dark-theme" : "light-theme";
@@ -34,7 +39,13 @@ const DrawerComp = () => {
     setCookie("theme", newTheme, { expires });
   };
 
-  const { t } = useTranslation("navbar");
+  const changeLang = (lang) => {
+    setSelectedLang(lang);
+    i18n.changeLanguage(lang);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("selectedLanguage", lang, { expires });
+  };
 
   useEffect(() => {
     document.body.className = isLightTheme ? "light-theme" : "dark-theme";
@@ -69,30 +80,109 @@ const DrawerComp = () => {
               <CloseIcon sx={{ color: isLightTheme ? "black" : "white" }} />
             </IconButton>
           </Grid>
-        </Grid>
+          <Grid md={12} xs={12}>
+            <Typography textAlign={"center"} paddingTop="20px" variant="h5">
+              {t("navHeading")}
+            </Typography>
+          </Grid>
 
-        <Grid md={12} xs={12}>
-          <Typography textAlign={"center"} paddingTop="100px" variant="h5">
-            {t("navHeading")}
-          </Typography>
+          <Grid sm={12}>
+            {lang.drawerHeadings?.map((heading) => {
+              return (
+                <Box key={heading.id}>
+                  <Link href={heading.id} className="link">
+                    {" "}
+                    <Typography className="drawerHeadings">
+                      {heading.title}
+                    </Typography>
+                  </Link>
+                </Box>
+              );
+            })}
+          </Grid>
         </Grid>
-
-        <Box>
-          <Stack
-            spacing={1}
-            direction="row"
-            justifyContent={"space-around"}
-            marginTop={"60px"}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+        >
+          <RadioGroup
+            aria-label="language"
+            name="language"
+            value={selectedLang}
+            onChange={(event) => changeLang(event.target.value)}
+            row
           >
-            <Button onClick={toggleTheme}>
-              {isLightTheme ? (
-                <WbSunnyRoundedIcon sx={{ color: "black" }} />
-              ) : (
-                <NightlightRoundRoundedIcon sx={{ color: "white" }} />
-              )}
-            </Button>
-            <AccountMenu />
-          </Stack>
+            <FormControlLabel
+              value="en"
+              control={
+                <Radio
+                  sx={{
+                    "&.Mui-checked": {
+                      color: isLightTheme ? "black" : "white",
+                    },
+                    color: isLightTheme ? "black" : "white",
+                  }}
+                />
+              }
+              label={"English"}
+            />
+
+            <FormControlLabel
+              value="urd"
+              control={
+                <Radio
+                  sx={{
+                    "&.Mui-checked": {
+                      color: isLightTheme ? "black" : "white",
+                    },
+                    color: isLightTheme ? "black" : "white",
+                  }}
+                />
+              }
+              label={"Urdu"}
+            />
+          </RadioGroup>
+        </Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <RadioGroup
+            aria-label="theme"
+            name="theme"
+            value={isLightTheme ? "light" : "dark"}
+            onChange={toggleTheme}
+            row
+          >
+            <FormControlLabel
+              value="light"
+              control={
+                <Radio
+                  sx={{
+                    "&.Mui-checked": {
+                      color: isLightTheme ? "black" : "white",
+                    },
+                    color: isLightTheme ? "black" : "white",
+                  }}
+                />
+              }
+              label={"Light"}
+            />
+
+            <FormControlLabel
+              value="dark"
+              control={
+                <Radio
+                  sx={{
+                    "&.Mui-checked": {
+                      color: isLightTheme ? "black" : "white",
+                    },
+                  }}
+                />
+              }
+              label={"Dark"}
+            />
+          </RadioGroup>
         </Box>
       </Drawer>
     </Box>

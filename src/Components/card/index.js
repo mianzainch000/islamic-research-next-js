@@ -11,7 +11,7 @@ const CardComp = ({ title, button, href }) => {
   return (
     <Card
       sx={{
-        width: "300px",
+        width: { lg: "300px", md: "300px", sm: "300px", xs: "90%" },
         height: "250px",
         borderRadius: "20px",
       }}
@@ -20,7 +20,7 @@ const CardComp = ({ title, button, href }) => {
       <CardContent>
         <Typography
           className="title"
-          sx={{ height: "130px", marginTop: "30px" }}
+          sx={{ height: "100px", marginTop: "50px" }}
         >
           {title}
         </Typography>
