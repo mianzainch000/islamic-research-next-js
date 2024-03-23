@@ -71,7 +71,7 @@ body {
 .drawerHeadings {
   font-size: 20px !important;
   font-weight: 600 !important;
-  padding: 10px !important;
+  padding: 10px  !important;
   text-align: center !important;
   color: var(--textColor) !important;
 }

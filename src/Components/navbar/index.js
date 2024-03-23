@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import DrawerComp from "@/Components/drawer";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import logo from "../../../public/image/logo.png";
 import React, { useState, useEffect } from "react";
@@ -11,14 +12,15 @@ import { useTheme, useMediaQuery } from "@mui/material";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRounded";
-
 const Navbar = () => {
   const [isLightTheme, setLightTheme] = useState(
     getCookie("theme") === "light-theme"
   );
+  const [screen, setScreenName] = useState("");
   const colorTheme = useTheme();
+  const path = usePathname();
   const { t } = useTranslation("navbar");
-
+  const { i18n } = useTranslation("drawerHeading");
   const isMatch = useMediaQuery(colorTheme.breakpoints.down("md"));
 
   const toggleTheme = () => {
@@ -30,8 +32,18 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    document.body.className = isLightTheme ? "light-theme" : "dark-theme";
-  }, [isLightTheme]);
+    if (path === "/") {
+      return setScreenName(t("navHeading"));
+    } else if (path === "/translationQuran") {
+      return setScreenName(t("quran"));
+    } else if (path === "/dua") {
+      return setScreenName(t("dua"));
+    } else if (path === "/namaz") {
+      return setScreenName(t("namaz"));
+    } else if (path === "/wealth") {
+      return setScreenName(t("wealth"));
+    }
+  }, [isLightTheme, path,t]);
 
   return (
     <AppBar position="fixed" sx={{ background: "grey" }}>
@@ -41,7 +53,9 @@ const Navbar = () => {
             <Link href={"/"}>
               <Image src={logo} width={50} />
             </Link>
-{/* <h3>Importance of dua</h3> */}
+            <Typography variant="h6" textAlign={"center"}>
+              {screen}
+            </Typography>
             <DrawerComp />
           </>
         ) : (
@@ -49,7 +63,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <Image src={logo} width={50} />
             </Link>
-            <Typography variant="h5">{t("navHeading")}</Typography>
+            <Typography variant="h5">{screen}</Typography>
             <Stack spacing={2} direction={"row"}>
               <Button onClick={() => toggleTheme()}>
                 {isLightTheme ? (

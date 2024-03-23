@@ -68,7 +68,7 @@ const DrawerComp = () => {
           },
         }}
       >
-        <Grid container>
+        <Grid container sx={{ padding: "30px 5px" }}>
           <Grid md={10} xs={10}>
             <Link href={"/"}>
               <Image src={logo} width={50} />
@@ -81,7 +81,7 @@ const DrawerComp = () => {
             </IconButton>
           </Grid>
           <Grid md={12} xs={12}>
-            <Typography textAlign={"center"} paddingTop="20px" variant="h5">
+            <Typography className="drawerHeadings">
               {t("navHeading")}
             </Typography>
           </Grid>
@@ -90,8 +90,11 @@ const DrawerComp = () => {
             {lang.drawerHeadings?.map((heading) => {
               return (
                 <Box key={heading.id}>
-                  <Link href={heading.id} className="link">
-                    {" "}
+                  <Link
+                    href={heading.id}
+                    className="link"
+                    onClick={() => setDrawerOpen(false)}
+                  >
                     <Typography className="drawerHeadings">
                       {heading.title}
                     </Typography>

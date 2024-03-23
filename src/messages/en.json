@@ -1342,7 +1342,11 @@
   ],
 
   "navbar": {
-    "navHeading": "In the remembrance of Allah, hearts find tranquility"
+    "navHeading": "In the remembrance of Allah, hearts find tranquility",
+    "quran": "Quran Translation",
+    "dua": " Importance of  Dua ",
+    "namaz": "Importance of  Prayer",
+    "wealth": "Wealth: A Trial"
   },
 
   "drawerHeadings": [
