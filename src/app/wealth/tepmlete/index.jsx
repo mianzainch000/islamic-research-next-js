@@ -18,6 +18,7 @@ const WealthSubHeading = () => {
         marginBottom: "20px",
         justifyContent: "center",
       }}
+      data-aos="fade-right"
     >
       {lang?.wealthSubHeading?.map((heading) => (
         <Grid

@@ -29,6 +29,7 @@ const QuranTrans = () => {
           sm={6}
           xs={12}
           sx={{ display: "flex", justifyContent: "center" }}
+          data-aos="fade-right"
         >
           <CardComp
             title={t(heading.text)}

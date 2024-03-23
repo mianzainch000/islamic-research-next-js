@@ -18,6 +18,7 @@ const DuaSubHeading = () => {
         marginBottom: "20px",
         justifyContent: "center",
       }}
+      data-aos="fade-right"
     >
       {lang?.duaSubHeading?.map((heading) => (
         <Grid

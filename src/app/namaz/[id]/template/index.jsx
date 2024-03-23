@@ -29,7 +29,7 @@ const DetailPage = () => {
   }
   console.log(subheading);
   return (
-    <Box>
+    <Box data-aos="fade-right">
       {content.map((con, index) => (
         <div key={index}>
           <Box className="box">

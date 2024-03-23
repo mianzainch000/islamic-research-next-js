@@ -19,6 +19,7 @@ const HomePage = () => {
         marginBottom: "20px",
         justifyContent: "center",
       }}
+      data-aos="fade-right"
     >
       {lang?.mainHeadings?.map((heading) => (
         <Grid

@@ -80,13 +80,13 @@ const DrawerComp = () => {
               <CloseIcon sx={{ color: isLightTheme ? "black" : "white" }} />
             </IconButton>
           </Grid>
-          <Grid md={12} xs={12}>
+          <Grid md={12} xs={12} data-aos="fade-right">
             <Typography className="drawerHeadings">
               {t("navHeading")}
             </Typography>
           </Grid>
 
-          <Grid sm={12}>
+          <Grid sm={12} data-aos="fade-right">
             {lang.drawerHeadings?.map((heading) => {
               return (
                 <Box key={heading.id}>

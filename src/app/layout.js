@@ -1,8 +1,11 @@
 "use client";
+import Aos from "aos";
 import "./globals.css";
+import "aos/dist/aos.css";
 import i18next from "i18next";
 import en from "@/messages/en.json";
 import urd from "@/messages/urd.json";
+import React, { useEffect } from "react";
 import { Inter } from "next/font/google";
 import Navbar from "@/Components/navbar";
 import { getCookie } from "cookies-next";
@@ -30,6 +33,10 @@ if (storedLang) {
 }
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <html lang="en">
       <I18nextProvider i18n={i18next}>
